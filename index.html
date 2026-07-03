@@ -187,7 +187,7 @@ function paStr(cv)  { return PA.filter(t => cv >= t.lo).map(t => t.t.toLocaleStr
 const CRITAIR = [
   { v:'0',  lbl:"Crit'Air 0 — 100 % électrique ou hydrogène",                               hint:"Vignette verte · catégorie E · 0 €",                                                warn:false, tarif:0,   fl:"Catégorie E" },
   { v:'1',  lbl:"Crit'Air 1 — essence Euro 5/6 (≥ 2011), hybride rechargeable, gaz",        hint:"Vignette violette · catégorie 1 · 130 €",                                          warn:false, tarif:130, fl:"Catégorie 1" },
-  { v:'2',  lbl:"Crit'Air 2 — essence Euro 4 (2006-2010) · diesel Euro 5/6 (≥ 2011)",       hint:"⚠ Vignette jaune · polluants · 650 € — diesel Euro 5/6 ici, pas catégorie 1",      warn:true,  tarif:650, fl:"Polluants · Crit'Air 2" },
+  { v:'2',  lbl:"Crit'Air 2 — jaune : diesel Euro 5/6 ou essence Euro 4",       hint:"⚠ Vignette jaune · polluants · 650 € — diesel Euro 5/6 ici, pas catégorie 1",      warn:true,  tarif:650, fl:"Polluants · Crit'Air 2" },
   { v:'3',  lbl:"Crit'Air 3 — essence Euro 2/3 (1997-2005) · diesel Euro 4 (2006-2010)",    hint:"Vignette orange · polluants · 650 €",                                              warn:false, tarif:650, fl:"Polluants · Crit'Air 3" },
   { v:'4',  lbl:"Crit'Air 4 — diesel Euro 3 (2001-2005)",                                   hint:"Vignette bordeaux · polluants · 650 €",                                            warn:false, tarif:650, fl:"Polluants · Crit'Air 4" },
   { v:'5',  lbl:"Crit'Air 5 — diesel Euro 2 (oct. 1997 – déc. 2000)",                       hint:"Vignette grise · polluants · 650 €",                                               warn:false, tarif:650, fl:"Polluants · Crit'Air 5" },
